@@ -2,17 +2,17 @@
 
 EDITH is a comprehensive, full-stack educational platform designed to transform static study materials into dynamic, personalized learning experiences.
 
-## 🚀 Project Overview
+##  Project Overview
 EDITH allows users to upload educational content in various formats (PDFs, Images, or Video Links). Using advanced AI text extraction and Generative AI, it processes the raw data and generates highly personalized, interactive study modules. The platform caters to different learning speeds and levels by intelligently tracking student profiles and weak topics.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - **Frontend**: React (Vite), Tailwind CSS, Framer Motion, React Router DOM, Axios
 - **Backend**: FastAPI, SQLAlchemy (SQLite), JWT Authentication
 - **AI Integration**: Custom services for document parsing (PDF/Image) and Generative AI processing (Quizzes, Notes, Flashcards)
 
 ---
 
-## 🟢 What is Working (Current Status)
+##  What is Working (Current Status)
 
 The core foundation and heavily integrated AI modules of the platform are operational:
 
@@ -38,7 +38,7 @@ The core foundation and heavily integrated AI modules of the platform are operat
 
 ---
 
-## 🔴 What is Not Working / Needs Improvement
+##  What is Not Working / Needs Improvement
 
 While the core pipeline is solid, some advanced experimental features are either mock-stage, brittle, or require further stabilization:
 
