@@ -7,7 +7,7 @@ import { QuizSection } from './QuizSection';
 import { ResultsSection } from './ResultsSection';
 import NeuralBackground from './NeuralBackground';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 const TABS = [
   { id: 'pdf',   icon: FileText, label: 'PDF',    color: '#3b82f6', badge: 'PDF' },
