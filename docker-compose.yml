@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/edith.db:/app/edith.db
+      - ./backend/vector_cache:/app/vector_cache
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
