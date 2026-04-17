@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, Link } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
 
 import Splash from './components/Splash';
@@ -40,13 +40,13 @@ function AppRoutes() {
         <PrivateRoute>
           <div className="min-h-screen p-6 flex flex-col items-center">
              <header className="w-full max-w-5xl py-6 flex justify-between items-center z-10 relative">
-                <div className="flex items-center gap-3 cursor-pointer" onClick={() => window.location.href='/dashboard'}>
+                <Link to="/dashboard" className="flex items-center gap-3 cursor-pointer">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-blue-500 flex items-center justify-center text-white font-display font-bold text-xl">
                     E
                   </div>
                   <h1 className="text-2xl font-display font-bold tracking-tight">EDITH</h1>
-                </div>
-                <button onClick={() => window.location.href='/dashboard'} className="text-white/40 hover:text-white transition-colors">Back to Dashboard</button>
+                </Link>
+                <Link to="/dashboard" className="text-white/40 hover:text-white transition-colors">Back to Dashboard</Link>
              </header>
              <main className="w-full max-w-4xl mt-12 flex-1 flex flex-col items-center">
                 <UploadSection />
